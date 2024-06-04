@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
         - name: app1-nginx
-          image: nginx
+          image: stacksimplify/kube-nginxapp1:1.0.0
           ports:
             - containerPort: 80
 # To schedule pods on based on NodeSelectors
-      nodeSelector:
-        app: system-apps
+      # nodeSelector:
+      #   app: system-apps
 
 
    
